@@ -20,6 +20,9 @@ int main()
                 largestPrimeFactor = i;
             }
         }
+        if (i % 1000000 == 0) {
+            std::cout << i << std::endl;
+        }
     }
 
     std::cout << "Largest prime factor of " << userInput << ": " << largestPrimeFactor << std::endl;
