@@ -12,5 +12,15 @@ int main()
     int userInput;
     std::cin >> userInput;
 
-    LOG(userInput);
+    int largestPrimeFactor = 0;
+
+    for (int i = 1; i <= userInput; i++) {
+        if (isPrimeNumber(i)) {
+            if (userInput % i == 0) {
+                largestPrimeFactor = i;
+            }
+        }
+    }
+
+    std::cout << "Largest prime factor of " << userInput << ": " << largestPrimeFactor << std::endl;
 }
