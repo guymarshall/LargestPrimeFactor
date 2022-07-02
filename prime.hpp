@@ -1,6 +1,6 @@
 #include <math.h>
 
-bool isPrimeNumber(int number)
+bool isPrimeNumber(long number)
 {
 	if (number == 2)
 	{
@@ -10,8 +10,8 @@ bool isPrimeNumber(int number)
 	{
 		return false;
 	}
-    int ceilingRoot = ceil(sqrt(number));
-    for (int i = 3; i <= ceilingRoot; i += 2)
+    long ceilingRoot = ceil(sqrt(number));
+    for (long i = 3; i <= ceilingRoot; i += 2)
     {
         if (number % i == 0)
         {

@@ -9,12 +9,12 @@
 int main()
 {
     printf("Enter a positive integer: ");
-    int userInput;
+    long userInput;
     std::cin >> userInput;
 
-    int largestPrimeFactor = 0;
+    long largestPrimeFactor = 0;
 
-    for (int i = 1; i <= userInput; i++) {
+    for (long i = 1; i <= userInput; i++) {
         if (isPrimeNumber(i)) {
             if (userInput % i == 0) {
                 largestPrimeFactor = i;
